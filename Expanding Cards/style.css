@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: 'Muli', sans-serif;
+}
+
+.container {
+    height: 80vh;
+    width: 80vw;
+    margin: 10vh 10vw;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.panel {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    color: rgba(0, 0, 0, 0);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 1s;
+    flex: 1;
+}
+
+.active {
+    flex: 5;
+    color: white;
+    padding: 2rem;
+}
