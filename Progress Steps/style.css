@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Muli', sans-serif;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    gap: 3rem;
+}
+
+.dot {
+    height: 30px;
+    width: 30px;
+    background: #dddddd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(170, 135, 135);
+    transition: 0.5s;
+}
+
+#progress {
+    z-index: -1;
+    height: 6px;
+    background: red;
+    position: absolute;
+    transition: 0.5s;
+}
+
+#progressUnder {
+    z-index: -2;
+    height: 6px;
+    background: #dddddd;
+    position: absolute;
+    width: 264px;
+}
+
+.active {
+    border: 3px solid red;
+    background: rgb(87, 4, 4);
+}
+
+.buttons {
+    display: flex;
+    gap: 2rem;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    border: 2px solid red;
+    background: red;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+
+button:active {
+    background: rgb(87, 4, 4);
+}
+
+button:disabled {
+    background: #dddddd;
+    border: 2px solid rgb(170, 135, 135);
+    cursor: not-allowed;
+}
