@@ -9,7 +9,7 @@ for (let i = 0; i < 101; i++) {
 
 function loop(i) {
     setTimeout(function () {
-        n.innerText = i + '%';
+        n.innerText = `${i}%`;
         n.style.opacity = (100 - i) / 100;
         bg.style.filter = `blur(${100 - i}px)`;
     }, 30 * i);
