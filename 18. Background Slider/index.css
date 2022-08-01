@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 700,
+        'GRAD' 200,
+        'opsz' 48
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    background: black;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s all ease;
+}
+
+.active {
+    opacity: 100;
+}
+
+.filter {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    clip-path: polygon(0% 0%, 0% 100%, 15% 100%, 15% 15%, 85% 15%, 85% 85%, 15% 85%, 15% 100%, 100% 100%, 100% 0%);
+    width: 100%;
+    height: 100%;
+}
+
+.middle {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.arrow {
+    padding: 1.5rem 1rem;
+    border: 2px solid orange;
+    cursor: pointer;
+}
+
+.inside {
+    width: 70%;
+    height: 70%;
+    box-shadow: 0px 5px 5px rgba(20, 20, 20, 0.473);
+}
