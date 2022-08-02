@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:300&display=swap');
+
+.dark-body {
+    background: #111111;
+    color: #ffffff;
+}
+
+.dark-but {
+    background: #ffffff;
+    color: #000000;
+}
+
+.dark-bg {
+    background: #ffffff;
+    color: #ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #000000;
+    background: #ffffff;
+    overflow: hidden;
+    font-family: 'Heebo', sans-serif;
+}
+
+button {
+    all: unset;
+    position: absolute;
+    top: 7rem;
+    color: #ffffff;
+    background: #000000;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 12rem;
+    width: 12rem;
+    position: relative;
+}
+
+.hour {
+    background: #000000;
+    height: 4rem;
+    width: 0.19rem;
+    z-index: 1;
+    position: absolute;
+    top: 2.5rem;
+    transition: 0.5s all ease;
+}
+
+.minute {
+    background: #000000;
+    height: 6.5rem;
+    width: 0.19rem;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    transition: 0.5s all ease;
+}
+
+.second {
+    background: #E74C3C;
+    height: 6.5rem;
+    width: 0.19rem;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    transition: 0.7s all ease;
+}
+
+.dot {
+    background: #000000;
+    border: 2px solid #E74C3C;
+    border-radius: 20px;
+    z-index: 4;
+    position: absolute;
+    width: 0.4rem;
+    height: 0.4rem;
+    top: 6.3rem;
+}
+
+.time {
+    font-weight: 400;
+    font-size: 60px;
+    margin-top: 1rem;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner {
+    background: #000000;
+    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin-left: 0.2rem;
+}
+
+.date {
+    font-weight: 400;
+    font-size: 14px;
+    color: #aaaaaa;
+}
