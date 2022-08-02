@@ -3,20 +3,22 @@ const months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "
 const dysInner = document.querySelector('.inner')
 const dysOuter = document.querySelector('.outer')
 const dysTime = document.querySelector('.time')
-
 const hour = document.querySelector('.hour')
 const minute = document.querySelector('.minute')
 const second = document.querySelector('.second')
-
 const button = document.querySelector('button')
 
 button.addEventListener('click', () => {
-    document.body.classList.toggle("dark-body");
-    button.classList.toggle("dark-but");
-    document.querySelector('.hour').classList.toggle("dark-bg");
-    document.querySelector('.minute').classList.toggle("dark-bg");
-    document.querySelector('.dot').classList.toggle("dark-bg");
-    document.querySelector('.inner').classList.toggle("dark-bg");
+    if (button.textContent === 'Dark mode') {
+        button.textContent = 'Light mode';
+    } else {
+        button.textContent = 'Dark mode';
+    }
+    document.body.classList.toggle("dark1");
+    const changes = document.querySelectorAll('.change');
+    changes.forEach(change => {
+        change.classList.toggle("dark2");
+    });
 });
 
 function update() {

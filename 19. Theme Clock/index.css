@@ -1,20 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Heebo:300&display=swap');
 
-.dark-body {
-    background: #111111;
-    color: #ffffff;
-}
-
-.dark-but {
-    background: #ffffff;
-    color: #000000;
-}
-
-.dark-bg {
-    background: #ffffff;
-    color: #ffffff;
-}
-
 * {
     padding: 0;
     margin: 0;
@@ -28,20 +13,25 @@ body {
     align-items: center;
     justify-content: center;
 
-    color: #000000;
-    background: #ffffff;
     overflow: hidden;
     font-family: 'Heebo', sans-serif;
+    transition: 0.5s all ease;
+}
+
+.change {
+    transition: 0.5s all ease;
 }
 
 button {
     all: unset;
     position: absolute;
     top: 7rem;
+    width: 6rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 4px;
     color: #ffffff;
     background: #000000;
-    padding: 0.2rem 0.5rem;
-    border-radius: 4px;
     cursor: pointer;
 }
 
@@ -65,7 +55,7 @@ button {
 .hour {
     background: #000000;
     height: 4rem;
-    width: 0.19rem;
+    width: 0.15rem;
     z-index: 1;
     position: absolute;
     top: 2.5rem;
@@ -85,7 +75,7 @@ button {
 .second {
     background: #E74C3C;
     height: 6.5rem;
-    width: 0.19rem;
+    width: 0.15rem;
     z-index: 3;
     position: absolute;
     top: 0;
@@ -129,4 +119,14 @@ button {
     font-weight: 400;
     font-size: 14px;
     color: #aaaaaa;
+}
+
+.dark1 {
+    background: #111111;
+    color: #ffffff;
+}
+
+.dark2 {
+    background: #ffffff;
+    color: #000000;
 }
