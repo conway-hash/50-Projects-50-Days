@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+
+    background: #4682B4;
+    color: #ffffff;
+}
+
+.box {
+    width: 9.25rem;
+    height: 9.25rem;
+    background: #ffffff;
+    border: 3px solid black;
+}
+
+.item {
+    background: #4682B4;
+    width: 100%;
+    height: 100%;
+}
+
+.drag-over {
+    border: dashed 3px white;
+    background: #3b3d3f;
+}
+
+.hide {
+    display: none;
+}
