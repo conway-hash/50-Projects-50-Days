@@ -13,7 +13,7 @@ body {
     align-items: center;
     justify-content: center;
 
-    background: #ffffff;
+    background: #F5F5F5;
     color: #000000;
     font-family: 'Roboto', sans-serif;
     font-size: 32px;
@@ -22,16 +22,17 @@ body {
 .container {
     width: 50rem;
     height: 50rem;
+    box-sizing: border-box;
 }
 
 
-.canvas {
+#canvas {
     width: 100%;
-    height: 88%;
+    height: 100%;
 
     box-sizing: border-box;
 
-    background: #ffffff;
+    background: #F5F5F5;
     border: 2px solid #4682B4;
 }
 
@@ -39,8 +40,11 @@ body {
     width: 100%;
     height: 12%;
 
+    margin-top: 0;
     display: flex;
     align-items: center;
+
+    transform: translateY(-8px);
 
     background: #4682B4;
 }
@@ -78,4 +82,10 @@ body {
 
     background: #ffffff;
     cursor: pointer;
+}
+
+input {
+    border: none;
+    font-size: 30px;
+    padding: 3px;
 }
