@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    color: white;
+    background: #222222;
+    height: 4.5rem;
+    width: 100%;
+    top: 0;
+}
+
+.middle {
+    height: 100%;
+    width: 50%;
+    display: block;
+}
+
+.left {
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.left h2 {
+    transition: 0.5s all ease;
+    cursor: pointer;
+}
+
+.left:hover h2 {
+    color: #B73729;
+}
+
+.right {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    float: right;
+}
+
+.right a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s all ease;
+}
+
+.right a:hover {
+    color: #B73729;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    text-align: center;
+    color: white;
+}
+
+.filter {
+    position: absolute;
+    background: #00000086;
+    width: 100%;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem 0rem;
+    gap: 1rem;
+    width: 50%;
+}
+
+.content p {
+    color: #555555;
+    line-height: 2rem;
+}
