@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto',sans-serif;
+
+    color: #000000;
+}
+
+#name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#form-out {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 2rem;
+    gap: 1.5rem;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    height: 25rem;
+    width: 25rem;
+    border-radius: 5px;
+}
+
+.form-in {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-in input {
+    all: unset;
+    box-sizing: border-box;
+    border: 1px solid rgb(233, 233, 233);
+    width: 100%;
+    padding: 0.7rem 0.5rem ;
+    border-radius: 5px;
+}
+
+.form-in input:focus {
+    border: 1px solid black;
+}
+
+#submit {
+    all: unset;
+    background: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.7rem 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit:active {
+    transform: scale(1.01);
+}
+
+#background {
+    height: 100%;
+    width: 100%;
+    background: url('https://images.unsplash.com/photo-1556745757-8d76bdb6984b') no-repeat center center/cover;
+}
