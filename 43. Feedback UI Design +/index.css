@@ -53,9 +53,15 @@ p {
     font-size: 13px;
     border-radius: 5px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 3px;
     cursor: pointer;
+}
+
+.pick a {
+    font-size: 20px;
 }
 
 input {
